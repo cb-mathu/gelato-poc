@@ -4,16 +4,17 @@
   "files": [
     "dist",
     "src",
-    "package.json"
+    "package.json",
+    "types"
   ],
-  "typings": "./dist/gelato.es.d.ts",
+  "typings": "./types/src/index.d.ts",
   "main": "./dist/gelato.es.js",
   "module": "./dist/gelato.es.js",
   "scripts": {
     "dev": "vite build --mode development --watch",
     "dev:storybook": "start-storybook -p 6007",
-    "build": "vue-tsc --noEmit && vite build --emptyOutDir",
-    "build:dev": "vue-tsc --noEmit && vite build --emptyOutDir --mode development",
+    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
+    "build:dev": "vue-tsc && vite build --mode development",
     "build:storybook": "build-storybook -o storybook-dist",
     "serve": "vite preview",
     "storybook": "npm run dev:storybook",
@@ -67,7 +68,7 @@
     "vite-dts": "^1.0.3",
     "vue-jest": "^5.0.0-alpha.7",
     "vue-loader": "^16.2.0",
-    "vue-tsc": "^0.0.24",
+    "vue-tsc": "^0.34.5",
     "vue-tsx-loader": "^0.1.4"
   },
   "engines": {

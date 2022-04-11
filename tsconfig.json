@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
+    "outDir": "types",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
