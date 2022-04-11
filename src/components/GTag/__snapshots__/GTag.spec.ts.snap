@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GTag :  renders default button with native attributes passed 1`] = `
+<span
+  class="my-tag g-tag g-product-card__type"
+  id="my-tag"
+  title="my tag"
+>
+  
+  Plan
+  
+</span>
+`;
+
+exports[`GTag :  renders primary tag with default args 1`] = `
+<span
+  class="g-tag g-tag--primary g-product-card__type"
+  variant="primary"
+>
+  
+  Plan
+  
+</span>
+`;
+
+exports[`GTag :  renders secondary tag with default args 1`] = `
+<span
+  class="g-tag g-tag--secondary g-product-card__type"
+  variant="secondary"
+>
+  
+  Plan
+  
+</span>
+`;
+
+exports[`GTag :  renders tertiary tag with default args 1`] = `
+<span
+  class="g-tag g-tag--tertiary g-product-card__type"
+  variant="tertiary"
+>
+  
+  Plan
+  
+</span>
+`;

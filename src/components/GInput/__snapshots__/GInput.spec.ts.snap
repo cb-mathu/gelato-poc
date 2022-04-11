@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GInput:  renders Number field 1`] = `
+<div
+  class="g-input"
+>
+  <!---->
+  <!---->
+  <div
+    class="g-input__group"
+  >
+    <!---->
+    <!---->
+    <input
+      aria-describedby="description_6"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_5"
+      autocomplete="off"
+      class="g-input__element"
+      id="GInput_8"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="10"
+      name=""
+      placeholder=""
+      type="number"
+    />
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GInput:  renders description 1`] = `
+<div
+  class="g-input"
+>
+  <label
+    class="g-input__label"
+    for="GInput_12"
+    id="label_9"
+  >
+    First Name
+  </label>
+  <div
+    class="g-input__desc"
+    id="description_10"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elitroin.Lorem ipsum dolor sit amet, consectetur adipiscing elitroin
+  </div>
+  <div
+    class="g-input__group"
+  >
+    <!---->
+    <!---->
+    <input
+      aria-describedby="description_10"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_9"
+      autocomplete="off"
+      class="g-input__element"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elitroin.Lorem ipsum dolor sit amet, consectetur adipiscing elitroin"
+      id="GInput_12"
+      invalid="false"
+      label="First Name"
+      modelmodifiers="[object Object]"
+      modelvalue="John"
+      name=""
+      placeholder=""
+      type="text"
+    />
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GInput:  renders slots 1`] = `
+<div
+  class="g-input"
+>
+  <label
+    class="g-input__label"
+    for="GInput_16"
+    id="label_13"
+  >
+    
+    First Name
+    
+  </label>
+  <div
+    class="g-input__desc"
+    id="description_14"
+  >
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elitroin.Lorem ipsum dolor sit amet, consectetur adipiscing elitroin
+    
+  </div>
+  <div
+    class="g-input__group"
+  >
+    <!---->
+    <!---->
+    <input
+      aria-describedby="description_14"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_13"
+      autocomplete="off"
+      class="g-input__element"
+      id="GInput_16"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="John"
+      name=""
+      placeholder=""
+      type="text"
+    />
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GInput:  renders with default args 1`] = `
+<div
+  class="g-input"
+>
+  <!---->
+  <!---->
+  <div
+    class="g-input__group"
+  >
+    <!---->
+    <!---->
+    <input
+      aria-describedby="description_2"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_1"
+      autocomplete="off"
+      class="g-input__element"
+      id="GInput_4"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="John"
+      name=""
+      placeholder=""
+      type="text"
+    />
+  </div>
+  <!---->
+</div>
+`;

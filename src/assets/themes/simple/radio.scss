@@ -1,0 +1,61 @@
+.g-radio {
+  @include flex;
+  @include flex-wrap;
+  & + & {
+    @include mt-1;
+  }
+  &__ {
+    &group {
+      @include flex;
+      @include items-center;
+    }
+    &element {
+      @include w-5;
+      @include h-5;
+      @include p-0;
+      @include appearance-none;
+      @include rounded-full;
+      @include border;
+      @include border-solid;
+      @include border-gray-200;
+      @include text-primary-600;
+      @include cursor-pointer;
+      @include shadow-sm;
+      @include transition;
+      &:focus {
+        @include ring;
+        @include ring-primary-500;
+        @include ring-opacity-50;
+        @include border-primary-300;
+      }
+      &:checked {
+        @include border-primary-600;
+        @include bg-current;
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+      }
+      &[readonly] {
+        @include pointer-events-none;
+      }
+    }
+    &label {
+      @include pl-2;
+      @include flex-grow;
+      @include flex-basis-none;
+      @include cursor-pointer;
+      @include text-sm;
+    }
+    &error {
+      @include flex-basis-full;
+    }
+  }
+}
+
+.g-card {
+  .g-radio {
+    &__ {
+      &group {
+        @include items-start;
+      }
+    }
+  }
+}

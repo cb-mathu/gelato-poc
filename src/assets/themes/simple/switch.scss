@@ -1,0 +1,91 @@
+.g-switch {
+  $root: &;
+  @include flex;
+  @include items-center;
+  @include gap-2;
+  @include cursor-pointer;
+
+  &__ {
+    &label {
+      @include font-semibold;
+      @include text-sm;
+    }
+
+    &element {
+      @include relative;
+      @include inline-flex;
+      @include flex-shrink-0;
+      @include h-5;
+      @include w-9;
+      @include border-2;
+      @include border-transparent;
+      @include rounded-full;
+      @include transition-colors;
+      @include ease-in-out;
+      @include duration-200;
+      @include bg-gray-500;
+
+      &:focus {
+        @include outline-none;
+        @include ring;
+        @include ring-primary-500;
+        @include ring-opacity-100;
+        @include border-primary-300;
+      }
+
+      &:disabled {
+        @include outline-none;
+        @include cursor-default;
+      }
+    }
+
+    &control {
+      @include pointer-events-none;
+      @include inline-block;
+      @include h-4;
+      @include w-4;
+      @include rounded-full;
+      @include bg-white;
+      @include shadow-md;
+      @include transform;
+      @include ring-0;
+      @include transition;
+      @include ease-in-out;
+      @include duration-300;
+      @include translate-x-0;
+    }
+  }
+
+  &-- {
+    &disabled {
+      @include cursor-default;
+    }
+    &active {
+      #{$root}__ {
+        &control {
+          @include translate-x-4;
+        }
+        &element {
+          @include bg-primary-700;
+        }
+      }
+    }
+    &invalid {
+      #{$root} {
+        &__ {
+          &element {
+            @include mt-1;
+            @include bg-red-50;
+            @include border-red-400;
+            &:focus {
+              @include ring;
+              @include ring-red-500;
+              @include ring-opacity-100;
+              @include border-red-300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

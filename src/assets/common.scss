@@ -1,0 +1,105 @@
+@import 'utilities';
+
+@mixin heading-util {
+  @include font-bold;
+  @include g-text-color-default;
+  @include tracking-tight;
+  @include antialiased;
+}
+
+h1 {
+  @include text-2xl;
+  @include heading-util;
+}
+
+h2 {
+  @include text-xl;
+  @include heading-util;
+}
+
+h3 {
+  @include text-lg;
+  @include heading-util;
+}
+
+h4 {
+  @include text-base;
+  @include heading-util;
+}
+
+h5 {
+  @include text-base;
+  @include font-bold;
+  @include g-text-color-default;
+  @include antialiased;
+}
+
+h6 {
+  @include g-text-base;
+  @include font-bold;
+  @include g-text-color-default;
+  @include antialiased;
+}
+
+a {
+  @include text-primary-700;
+  @include cursor-pointer;
+  @include underline;
+  @include font-medium;
+}
+
+hr {
+  @include border-dashed;
+  @include border-gray-200;
+}
+
+input,
+select {
+  &:hover {
+    @include border-gray-300;
+  }
+
+  &[readonly],
+  &[readonly] + label {
+    @include pointer-events-none;
+  }
+
+  &:disabled,
+  &:disabled + label {
+    @include pointer-events-none;
+  }
+}
+
+input,
+select,
+textarea {
+  &:disabled:not(:checked) {
+    @include bg-gray-50;
+  }
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+@import './layout.scss';
+@import './themes/simple/button.scss';
+@import './themes/simple/switch.scss';
+@import './themes/simple/checkbox.scss';
+@import './themes/simple/radio.scss';
+@import './themes/simple/input.scss';
+@import './themes/simple/form.scss';
+@import './themes/simple/card.scss';
+@import './themes/simple/address.scss';
+@import './themes/simple/product-card.scss';
+@import './themes/simple/quantity.scss';
+@import './themes/simple/notification.scss';
+@import './themes/simple/tag.scss';
+@import './themes/simple/order-summary.scss';
+@import './themes/simple/payment-method.scss';
+@import './themes/simple/success-order-summary.scss';
+@import './themes/simple/modal.scss';
+@import './themes/simple/section.scss';
+@import './themes/simple/login.scss';
+@import './themes/simple/error.scss';
+@import './themes/simple/loader.scss';

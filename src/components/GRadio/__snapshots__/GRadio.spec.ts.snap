@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GRadio:  renders with default args 1`] = `
+<div
+  class="g-radio"
+>
+  <div
+    class="g-radio__group"
+  >
+    <input
+      aria-checked="false"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_1"
+      autocomplete="off"
+      class="g-radio__element"
+      id="GRadio_4"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+      type="radio"
+    />
+  </div>
+  <label
+    class="g-radio__label"
+    for="GRadio_4"
+    id="label_1"
+  >
+    
+    On
+    
+  </label>
+  <!---->
+</div>
+`;

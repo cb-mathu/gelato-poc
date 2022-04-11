@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GCheckbox :  renders with default args 1`] = `
+<div
+  class="g-checkbox"
+>
+  <input
+    aria-checked="false"
+    aria-errormessage=""
+    aria-invalid="false"
+    aria-labelledby="label_1"
+    autocomplete="off"
+    class="g-checkbox__element checkbox_element_4"
+    false-value="false"
+    falsevalue="false"
+    id="element_4"
+    invalid="false"
+    modelmodifiers="[object Object]"
+    modelvalue="false"
+    name=""
+    placeholder=""
+    true-value="true"
+    truevalue="true"
+    type="checkbox"
+  />
+  <label
+    class="g-checkbox__label label_element_4"
+    for="element_4"
+    id="label_1"
+  >
+    <!---->
+  </label>
+  <!---->
+</div>
+`;

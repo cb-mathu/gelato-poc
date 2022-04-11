@@ -1,0 +1,168 @@
+// Input
+.g-input {
+  $input: &;
+  @include grid;
+  @include grid-cols-1;
+  @include gap-1;
+
+  select {
+    @include pr-2;
+    @include bg-no-repeat;
+    @include bg-color-none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23787F91' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-size: 1.5rem;
+    background-position: right 0.5rem center;
+  }
+
+  &__ {
+    &label {
+      @include font-semibold;
+      @include text-sm;
+    }
+
+    &group {
+      @include relative;
+      @include flex;
+      @include items-center;
+    }
+
+    &prefix,
+    &suffix {
+      @include py-3;
+      @include border;
+      @include border-gray-200;
+      @include p-3;
+      @include rounded-md;
+      &:empty {
+        @include hidden;
+      }
+      &:focus-within {
+        @include ring;
+        @include ring-primary-300;
+        @include ring-opacity-50;
+        @include border-primary-400;
+        @include z-2;
+      }
+      select {
+        @include pl-2;
+        @include pr-0;
+        @include border-0;
+        @include p-0;
+        background-position: right 0;
+        width: 50px;
+        &:focus {
+          @include outline-none;
+          @include ring-0;
+        }
+      }
+    }
+
+    &prefix {
+      @include pl-3;
+      left: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      @include shadow-sm;
+
+      &:not(:empty) ~ #{$input}__element {
+        @include flex-1;
+        border-left: 0;
+        &:focus {
+          @include z-2;
+        }
+        &:not(:focus) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+
+      #{$input}__element {
+        box-shadow: none;
+      }
+    }
+
+    &suffix {
+      @include pr-3;
+      @include order-3;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      @include shadow-sm;
+
+      &:not(:empty) + #{$input}__element {
+        @include pr-10;
+        @include flex-1;
+        border-right: 0;
+        &:focus {
+          @include z-2;
+        }
+        &:not(:focus) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      #{$input}__element {
+        @include shadow-none;
+      }
+    }
+
+    &element {
+      @include appearance-none;
+      @include block;
+      @include p-3;
+      @include rounded-md;
+      @include w-full;
+      @include border;
+      @include border-gray-200;
+      @include shadow-sm;
+
+      &:focus {
+        @include ring;
+        @include ring-primary-200;
+        @include ring-opacity-50;
+        @include border-primary-400;
+      }
+      &:hover {
+        & ~ {
+          select {
+            @include border-gray-300;
+          }
+        }
+      }
+    }
+
+    &desc {
+      @include font-normal;
+      @include text-sm;
+      @include text-gray-600;
+    }
+  }
+  &-- {
+    &invalid {
+      #{$input} {
+        &__ {
+          &element,
+          &prefix,
+          &suffix {
+            @include bg-red-50;
+            @include border-red-400;
+            &:focus {
+              @include bg-color-none;
+            }
+          }
+        }
+      }
+    }
+    &disabled {
+      #{$input} {
+        &__ {
+          &element,
+          &prefix,
+          &suffix {
+            @include bg-gray-50;
+          }
+        }
+      }
+    }
+  }
+}

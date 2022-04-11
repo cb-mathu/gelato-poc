@@ -1,0 +1,7 @@
+.g-section {
+  @include pb-6;
+
+  &__title {
+    @include mb-8;
+  }
+}

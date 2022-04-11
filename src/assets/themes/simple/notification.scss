@@ -1,0 +1,108 @@
+.g-notification {
+  $notification: &;
+  @include flex;
+  @include gap-3;
+  @include g-text-base;
+  @include bg-gray-50;
+  @include text-gray-900;
+  @include p-4;
+  @include py-3;
+  @include my-2;
+  @include rounded-lg;
+
+  &__ {
+    &icon {
+      @include flex-shrink-0;
+      @include w-5;
+      @include h-5;
+      @include fill-current;
+    }
+  }
+
+  &-- {
+    &primary {
+      @include bg-white;
+
+      #{$notification} {
+        &__ {
+          &icon {
+            @include text-primary-600;
+          }
+          &message {
+            @include bg-transparent;
+            @include text-primary-900;
+          }
+        }
+      }
+    }
+    &alert {
+      @include bg-red-50;
+
+      #{$notification} {
+        &__ {
+          &icon {
+            @include text-red-600;
+          }
+          &message {
+            * {
+              @include text-red-900;
+              @include bg-red-50;
+            }
+          }
+        }
+      }
+    }
+    &warning {
+      @include bg-yellow-50;
+
+      #{$notification} {
+        &__ {
+          &icon {
+            @include text-yellow-600;
+          }
+          &message {
+            * {
+              @include bg-yellow-50;
+              @include text-yellow-900;
+            }
+          }
+        }
+      }
+    }
+    &success {
+      @include bg-green-50;
+
+      #{$notification} {
+        &__ {
+          &icon {
+            @include text-green-600;
+          }
+          &message {
+            * {
+              @include bg-green-50;
+              @include text-green-900;
+            }
+          }
+        }
+      }
+    }
+    &small {
+      @include gap-2;
+      @include p-2;
+      @include py-1;
+      @include items-center;
+      @include my-1;
+      @include inline-flex;
+      @include w-auto;
+
+      #{$notification} {
+        &__ {
+          &icon {
+            @include w-4;
+            @include h-4;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.g-success {
+  &__ {
+    &icon {
+      @include text-primary-600;
+    }
+
+    &payment {
+      @include text-center;
+    }
+
+    &divider {
+      @include my-3;
+    }
+
+    &header {
+      @include text-xl;
+      @include font-medium;
+      padding: 20px 0 20px 0;
+    }
+
+    &order-header {
+      @include text-xl;
+      color: #6c7384;
+      @include font-medium;
+      @include py-4;
+    }
+
+    &price {
+      @include text-2xl;
+      @include font-semibold;
+    }
+    &addressHeader {
+      @include my-4;
+    }
+
+    &address {
+      &-head {
+        @include text-gray-400;
+        @include uppercase;
+        @include mb-2;
+        @include text-xs;
+      }
+    }
+  }
+}
+
+.g-payment-method {
+  @include flex;
+  @include gap-2;
+  @include content-center;
+  @include mx-auto;
+  @include my-0;
+
+  &__ {
+    &info {
+      @include flex-1;
+      @include text-left;
+    }
+  }
+}

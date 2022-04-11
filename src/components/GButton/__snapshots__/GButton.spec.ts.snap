@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GButton :  renders default button as anchor tag 1`] = `
+<span
+  class="g-button__label"
+>
+  
+  Click me!
+  
+</span>
+`;
+
+exports[`GButton :  renders default button as fluid 1`] = `
+<span
+  class="g-button__label"
+>
+  
+  Click me!
+  
+</span>
+`;
+
+exports[`GButton :  renders default button with native attributes passed 1`] = `
+<span
+  class="g-button__label"
+>
+  
+  Click me!
+  
+</span>
+`;
+
+exports[`GButton :  renders link button with default args 1`] = `
+<span
+  class="g-button__label"
+>
+  
+  Click me!
+  
+</span>
+`;
+
+exports[`GButton :  renders outlined button with default args 1`] = `
+<span
+  class="g-button__label"
+>
+  
+  Click me!
+  
+</span>
+`;
+
+exports[`GButton :  renders primary button with default args 1`] = `
+<span
+  class="g-button__label"
+>
+  
+  Click me!
+  
+</span>
+`;

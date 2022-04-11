@@ -1,0 +1,39 @@
+.g-address {
+  &__ {
+    &title {
+      @include flex;
+      @include items-center;
+      @include justify-between;
+    }
+
+    &caption {
+      @include g-text-secondary;
+      @include -mt-1;
+    }
+
+    &content {
+      @include mt-2;
+    }
+    &value {
+      // select from the second non empty
+      &:not(.hidden) ~ &:not(.hidden) {
+        &:before {
+          content: ', ';
+        }
+      }
+    }
+  }
+  &- {
+    &group {
+      &__ {
+        &wrap {
+          @include pl-1;
+          @include -mt-1;
+          @include g-mq(md) {
+            @include pl-3;
+          }
+        }
+      }
+    }
+  }
+}

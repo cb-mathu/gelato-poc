@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GQuantity :  renders quantity in disabled state 1`] = `
+<div>
+  <div
+    class="g-quantity g-quantity--disabled"
+    value="5"
+  >
+    <button
+      aria-disabled="true"
+      as="button"
+      class="g-quantity__change g-quantity__decrement"
+      disabled=""
+      tabindex="-1"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <input
+      aria-label="units"
+      aria-live="assertive"
+      autocomplete="off"
+      class="g-quantity__element"
+      disabled=""
+      id="GQuantity_7"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+      type="number"
+    />
+    <button
+      aria-disabled="true"
+      as="button"
+      class="g-quantity__change g-quantity__increment"
+      disabled=""
+      tabindex="-1"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`GQuantity :  renders quantity in invalid state 1`] = `
+<div>
+  <div
+    class="g-quantity g-quantity--invalid"
+    value="5"
+  >
+    <button
+      aria-disabled="false"
+      as="button"
+      class="g-quantity__change g-quantity__decrement"
+      tabindex="0"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <input
+      aria-label="units"
+      aria-live="assertive"
+      autocomplete="off"
+      class="g-quantity__element"
+      id="GQuantity_12"
+      invalid="true"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+      type="number"
+    />
+    <button
+      aria-disabled="false"
+      as="button"
+      class="g-quantity__change g-quantity__increment"
+      tabindex="0"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`GQuantity :  renders quantity in readonly state 1`] = `
+<div>
+  <div
+    class="g-quantity g-quantity--readonly"
+    value="5"
+  >
+    <button
+      aria-disabled="true"
+      as="button"
+      class="g-quantity__change g-quantity__decrement"
+      disabled=""
+      tabindex="-1"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <input
+      aria-label="units"
+      aria-live="assertive"
+      autocomplete="off"
+      class="g-quantity__element"
+      id="GQuantity_10"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+      readonly=""
+      type="number"
+    />
+    <button
+      aria-disabled="true"
+      as="button"
+      class="g-quantity__change g-quantity__increment"
+      disabled=""
+      tabindex="-1"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`GQuantity :  renders quantity with default args 1`] = `
+<div>
+  <div
+    class="g-quantity"
+  >
+    <button
+      aria-disabled="false"
+      as="button"
+      class="g-quantity__change g-quantity__decrement"
+      tabindex="0"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <input
+      aria-label="units"
+      aria-live="assertive"
+      autocomplete="off"
+      class="g-quantity__element"
+      id="GQuantity_1"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+      type="number"
+    />
+    <button
+      aria-disabled="false"
+      as="button"
+      class="g-quantity__change g-quantity__increment"
+      tabindex="0"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`GQuantity :  renders quantity with native attributes 1`] = `
+<div>
+  <div
+    class="g-quantity"
+    max="5"
+    min="4"
+    step="2"
+  >
+    <button
+      aria-disabled="true"
+      as="button"
+      class="g-quantity__change g-quantity__decrement"
+      disabled=""
+      tabindex="-1"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <input
+      aria-label="units"
+      aria-live="assertive"
+      autocomplete="off"
+      class="g-quantity__element"
+      id="GQuantity_2"
+      invalid="false"
+      max="5"
+      min="4"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+      step="2"
+      type="number"
+    />
+    <button
+      aria-disabled="false"
+      as="button"
+      class="g-quantity__change g-quantity__increment"
+      tabindex="0"
+    >
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

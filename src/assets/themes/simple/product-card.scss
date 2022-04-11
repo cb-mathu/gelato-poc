@@ -1,0 +1,73 @@
+.g-product-card {
+  @include relative;
+
+  &__ {
+    &image {
+      @include flex;
+      @include gap-4;
+    }
+
+    &desc {
+      @include max-w-md;
+      @include mt-2;
+      @include mb-1;
+    }
+
+    &amount {
+      @include font-bold;
+      @include flex-grow;
+      @include text-left;
+      @include text-right;
+
+      &__left {
+        @extend .g-product-card__amount;
+        @include flex-grow-0;
+        @include text-left;
+      }
+    }
+
+    &tier {
+      &s {
+        @include pt-3;
+      }
+
+      &-total {
+        @include g-text-color-default;
+      }
+
+      @include flex;
+      @include g-text-secondary;
+    }
+
+    &qty {
+      @include flex;
+      @include flex-wrap;
+      @include gap-1;
+      @include mt-1;
+      @include items-center;
+      span:first-of-type {
+        @include gap-1;
+      }
+      svg {
+        @include h-4;
+        @include w-4;
+      }
+    }
+  }
+
+  &-- {
+    &loading {
+      &:before {
+        content: '';
+        @include absolute;
+        @include inset-0;
+        @include z-2;
+        @include bg-white-trans;
+        background-image: url('./images/spinner.svg');
+        @include bg-no-repeat;
+        @include bg-center;
+        @include text-gray-200;
+      }
+    }
+  }
+}

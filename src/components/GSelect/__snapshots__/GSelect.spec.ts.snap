@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GSelect :  renders the default with default args 1`] = `
+<div
+  class="g-input"
+>
+  <!---->
+  <!---->
+  <div
+    class="g-input__group"
+  >
+    <select
+      aria-describedby="description_2"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_1"
+      autocomplete="off"
+      class="g-input__element"
+      id="GSelect_4"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      name=""
+      placeholder=""
+    >
+      
+      
+      <option
+        value=""
+      >
+        Select country
+      </option>
+      <option>
+        Germany
+      </option>
+      <option>
+        India
+      </option>
+      
+      
+    </select>
+  </div>
+  <!---->
+</div>
+`;

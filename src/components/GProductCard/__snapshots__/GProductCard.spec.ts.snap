@@ -1,0 +1,784 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GProductCard :  Invalid :  renders per unit card in invalid state 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__blossom"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--primary g-product-card__type"
+      variant="primary"
+    >
+      
+      Plan
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Blossom
+        </h4>
+        <!---->
+        
+        <div
+          class="g-product-card__qty"
+        >
+          
+          <span
+            class="g-product-card__unit-price"
+          >
+            $5
+             
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+          
+          <div
+            class="g-quantity g-quantity--invalid"
+          >
+            <button
+              aria-disabled="false"
+              as="button"
+              class="g-quantity__change g-quantity__decrement"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <input
+              aria-label="units"
+              aria-live="assertive"
+              autocomplete="off"
+              class="g-quantity__element"
+              id="GQuantity_4"
+              invalid="true"
+              modelmodifiers="[object Object]"
+              modelvalue="1"
+              name=""
+              placeholder=""
+              type="number"
+            />
+            <button
+              aria-disabled="false"
+              as="button"
+              class="g-quantity__change g-quantity__increment"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <span
+            class="qty_label"
+          >
+            units
+          </span>
+          
+          
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <div>
+      <div
+        class="g-notification g-notification--alert g-notification--small"
+      >
+        <svg
+          class="g-notification__icon"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <p
+          class="g-notification__message"
+        >
+          
+          <span>
+            Quantity should be between 1 and 10
+          </span>
+          
+        </p>
+      </div>
+    </div>
+    <!---->
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  Invalid :  renders tiered card in invalid state 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__blossom"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--primary g-product-card__type"
+      variant="primary"
+    >
+      
+      Plan
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Blossom
+        </h4>
+        <p
+          class="g-product-card__desc"
+        >
+          This is enterprise level plan comes with a 14-day trial period and has a setup cost.
+        </p>
+        
+        <div
+          class="g-product-card__qty"
+        >
+          
+          
+          <div
+            class="g-quantity g-quantity--invalid"
+          >
+            <button
+              aria-disabled="false"
+              as="button"
+              class="g-quantity__change g-quantity__decrement"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <input
+              aria-label="units"
+              aria-live="assertive"
+              autocomplete="off"
+              class="g-quantity__element"
+              id="GQuantity_5"
+              invalid="true"
+              modelmodifiers="[object Object]"
+              modelvalue="5"
+              name=""
+              placeholder=""
+              type="number"
+            />
+            <button
+              aria-disabled="false"
+              as="button"
+              class="g-quantity__change g-quantity__increment"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <span
+            class="qty_label"
+          >
+            units
+          </span>
+          
+            
+          <a
+            aria-disabled="false"
+            as="a"
+            class="g-tier-details-toggle"
+            disabled="false"
+            role="button"
+            tabindex="0"
+          >
+            See details
+          </a>
+          
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <div>
+      <div
+        class="g-notification g-notification--alert g-notification--small"
+      >
+        <svg
+          class="g-notification__icon"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <p
+          class="g-notification__message"
+        >
+          
+          <span>
+            Quantity should be between 1 and 10
+          </span>
+          
+        </p>
+      </div>
+    </div>
+    <div>
+      <transition-stub>
+        
+        <!---->
+        
+      </transition-stub>
+    </div>
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  renders default addon card 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__ssl"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--secondary g-product-card__type"
+      variant="secondary"
+    >
+      
+      Addon
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          SSL
+        </h4>
+        <!---->
+        
+        <div
+          class="g-product-card__qty"
+        >
+          <!---->
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  renders default charge card 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__day-pass"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--secondary g-product-card__type"
+      variant="secondary"
+    >
+      
+      One-time
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Day Pass
+        </h4>
+        <!---->
+        
+        <div
+          class="g-product-card__qty"
+        >
+          <!---->
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  renders default plan card 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__blossom"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--primary g-product-card__type"
+      variant="primary"
+    >
+      
+      Plan
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Blossom
+        </h4>
+        <!---->
+        
+        <div
+          class="g-product-card__qty"
+        >
+          <!---->
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  renders metered card 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__blossom"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--primary g-product-card__type"
+      variant="primary"
+    >
+      
+      Plan
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Blossom
+        </h4>
+        <!---->
+        
+        <div
+          class="g-product-card__qty"
+        >
+          <!---->
+          <span>
+            ⚡️   Charged based on the usage
+          </span>
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  renders per unit card 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__blossom"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--primary g-product-card__type"
+      variant="primary"
+    >
+      
+      Plan
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Blossom
+        </h4>
+        <!---->
+        
+        <div
+          class="g-product-card__qty"
+        >
+          
+          <span
+            class="g-product-card__unit-price"
+          >
+            $5
+             
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+          
+          <span
+            class="g-product-card__qty__text"
+          >
+            1
+          </span>
+          <span
+            class="qty_label"
+          >
+            units
+          </span>
+          
+          
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`GProductCard :  renders tiered card in editable state 1`] = `
+<section
+  class="g-card g-product-card"
+  id="g-product-card__blossom"
+>
+  <div
+    class="g-card__content"
+  >
+    <span
+      class="g-tag g-tag--primary g-product-card__type"
+      variant="primary"
+    >
+      
+      Plan
+      
+    </span>
+    <div
+      class="g-card__content_row"
+    >
+      <div
+        class="g-card__left"
+      >
+        <h4
+          class="g-product-card__heading"
+        >
+          Blossom
+        </h4>
+        <p
+          class="g-product-card__desc"
+        >
+          This is enterprise level plan comes with a 14-day trial period and has a setup cost.
+        </p>
+        
+        <div
+          class="g-product-card__qty"
+        >
+          
+          
+          <div
+            class="g-quantity"
+          >
+            <button
+              aria-disabled="false"
+              as="button"
+              class="g-quantity__change g-quantity__decrement"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <input
+              aria-label="units"
+              aria-live="assertive"
+              autocomplete="off"
+              class="g-quantity__element"
+              id="GQuantity_2"
+              modelmodifiers="[object Object]"
+              modelvalue="5"
+              name=""
+              placeholder=""
+              type="number"
+            />
+            <button
+              aria-disabled="false"
+              as="button"
+              class="g-quantity__change g-quantity__increment"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <span
+            class="qty_label"
+          >
+            units
+          </span>
+          
+            
+          <a
+            aria-disabled="false"
+            as="a"
+            class="g-tier-details-toggle"
+            disabled="false"
+            role="button"
+            tabindex="0"
+          >
+            See details
+          </a>
+          
+          <!---->
+          <!---->
+        </div>
+        
+      </div>
+      <div
+        class="g-card__qty-margin g-card__right"
+      >
+        
+        <span
+          class="g-product-card__amount"
+        >
+          $5.00
+        </span>
+        
+      </div>
+    </div>
+    <!---->
+    <div>
+      <transition-stub>
+        
+        <!---->
+        
+      </transition-stub>
+    </div>
+    <!---->
+  </div>
+</section>
+`;

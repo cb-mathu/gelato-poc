@@ -1,0 +1,15 @@
+.g-form {
+  @include grid;
+  @include grid-cols-1;
+  @include gap-4;
+}
+
+.g-field {
+  &-- {
+    &col-2 {
+      @include grid;
+      @include gap-4;
+      @include grid-cols-2;
+    }
+  }
+}

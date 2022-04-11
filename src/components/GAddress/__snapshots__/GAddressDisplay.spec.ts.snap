@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GAddressDisplay :  renders default address with all values 1`] = `
+<div
+  class="g-address"
+>
+  <div
+    class="g-address__title"
+  >
+    <h3>
+      John Doe
+    </h3>
+    <a
+      as="a"
+      role="button"
+      tabindex="0"
+    >
+      Edit
+    </a>
+  </div>
+  <h6
+    class="g-address__caption"
+  >
+    Chargebee
+  </h6>
+  <p
+    class="g-address__content"
+  >
+    <p>
+      
+      <span
+        class="g-address_line1 g-address__value"
+      >
+        3rd Floor
+      </span>
+      <span
+        class="g-address_line2 g-address__value"
+      >
+        Brigade Vantage 1
+      </span>
+      <span
+        class="g-address_line3 g-address__value"
+      >
+        OMR Service Rd
+      </span>
+      
+    </p>
+    <p>
+      
+      <span
+        class="g-address_city g-address__value"
+      >
+        Chennai
+      </span>
+      <span
+        class="g-address_zip g-address__value"
+      >
+        600028
+      </span>
+      
+    </p>
+    <p>
+      
+      <span
+        class="g-address_state g-address__value"
+      >
+        Tamil Nadu
+      </span>
+      <span
+        class="g-address_country g-address__value"
+      >
+        India
+      </span>
+      
+    </p>
+  </p>
+</div>
+`;

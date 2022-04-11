@@ -1,0 +1,74 @@
+.g-payment {
+  &__ {
+    &wrap {
+      @include flex;
+      @include flex-wrap;
+      @include gap-6;
+      @include justify-between;
+      @include items-start;
+      @include pl-3;
+      @include g-mq(sm) {
+        @include gap-4;
+      }
+    }
+    &main {
+      @include flex-grow;
+      @include flex-basis-none;
+      @include flex;
+      @include gap-x-4;
+      @include gap-y-2;
+      @include flex-wrap;
+    }
+    &info {
+      @include flex-1;
+      @include whitespace-nowrap;
+    }
+    &logo {
+      & > svg {
+        @include h-5;
+      }
+      &--card > svg {
+        @include w-9;
+      }
+    }
+    &form {
+      @include grid;
+      @include gap-3;
+      @include flex-grow-0;
+      @include flex-shrink-0;
+      @include flex-basis-full;
+    }
+    &hint-text {
+      ol {
+        @include list-decimal;
+        @include text-gray-700;
+        @include text-sm;
+        @include font-light;
+      }
+    }
+  }
+  &- {
+    &card {
+      @include grid;
+      @include gap-4;
+      h4 {
+        @include flex;
+        @include gap-4;
+        margin-top: -3px;
+      }
+      &__ {
+        &list {
+          @include grid;
+          @include gap-2;
+          @include grid-cols-3;
+          svg {
+            @include w-9;
+          }
+          @include g-mq(sm) {
+            @include grid-cols-4;
+          }
+        }
+      }
+    }
+  }
+}

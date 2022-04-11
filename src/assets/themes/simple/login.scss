@@ -1,0 +1,23 @@
+.g-login {
+  &-section {
+    z-index: 4;
+  }
+
+  &__ {
+    &actions {
+      @include flex;
+      @include flex-col;
+      @include gap-4;
+    }
+    &overlay {
+      @include fixed;
+      display: block;
+      @include w-full;
+      @include h-full;
+      @include inset-0;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 2;
+      cursor: default;
+    }
+  }
+}

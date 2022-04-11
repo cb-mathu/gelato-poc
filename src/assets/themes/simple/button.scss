@@ -1,0 +1,67 @@
+.g-button {
+  $root: &;
+  @include inline-flex;
+  @include align-middle;
+  @include justify-center;
+  @include font-medium;
+  @include w-min;
+  @include py-2;
+  @include px-4;
+  @include rounded-md;
+  @include bg-transparent;
+  @include text-primary-700;
+  @include border-2;
+  @include border-primary-600;
+  @include no-underline;
+  @include whitespace-nowrap;
+  @include cursor-pointer;
+  @include items-center;
+  @include outline-none;
+  @include relative;
+
+  &__ {
+    &spinner {
+      @include hidden;
+      @include h-full;
+      @include absolute;
+      @include flex;
+    }
+  }
+
+  &:hover {
+    @include bg-primary-50;
+    @include text-primary-700;
+  }
+
+  &:focus {
+    @include outline-none;
+    @include ring;
+    @include ring-primary-200;
+  }
+
+  &-- {
+    &loading {
+      @include pointer-events-none;
+      #{$root}__label {
+        @include invisible;
+      }
+    }
+    &primary {
+      @include bg-primary-600;
+      @include text-white;
+
+      &:hover {
+        @include bg-primary-700;
+        @include text-white;
+      }
+    }
+    &link {
+      @include border-0;
+      @include text-primary-700;
+    }
+    &fluid {
+      @include w-full;
+      @include text-center;
+    }
+  }
+}

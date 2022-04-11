@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GModal :  renders modal by default with any failures 1`] = `
+<div>
+  <div
+    aria-modal="true"
+    class="g-modal"
+    id="headlessui-dialog-1"
+    role="dialog"
+  >
+    <div
+      class="g-modal__container"
+    >
+      <div
+        aria-hidden="true"
+        class="g-modal__overlay"
+        id="headlessui-dialog-overlay-2"
+      />
+      <button
+        class="g-modal__test"
+      />
+      <div
+        class="g-modal__content"
+      >
+        <h2
+          class="g-modal__title"
+          id="headlessui-dialog-title-3"
+        >
+          Terms of service
+        </h2>
+        <p
+          id="headlessui-description-4"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <div
+          class="g-modal__body"
+        >
+          
+          <div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+          
+        </div>
+        <div
+          class="g-modal__footer"
+        >
+          
+          <button
+            as="button"
+            class="g-button"
+            fluid="false"
+            loading="false"
+          >
+            <!---->
+            <span
+              class="g-button__label"
+            >
+              
+              Submit
+              
+            </span>
+          </button>
+          
+        </div>
+      </div>
+      <button
+        aria-label="Close"
+        class="g-modal__close"
+        type="button"
+      >
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`GModal :  renders modal with Content 1`] = `
+<div>
+  <div
+    aria-modal="true"
+    class="g-modal"
+    id="headlessui-dialog-13"
+    role="dialog"
+  >
+    <div
+      class="g-modal__container"
+    >
+      <div
+        aria-hidden="true"
+        class="g-modal__overlay"
+        id="headlessui-dialog-overlay-14"
+      />
+      <button
+        class="g-modal__test"
+      />
+      <div
+        class="g-modal__content"
+      >
+        <h2
+          class="g-modal__title"
+          id="headlessui-dialog-title-15"
+        >
+          Terms of service
+        </h2>
+        <!---->
+        <div
+          class="g-modal__body"
+        >
+          
+          <div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+          
+        </div>
+        <!---->
+      </div>
+      <button
+        aria-label="Close"
+        class="g-modal__close"
+        type="button"
+      >
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`GModal :  renders modal with Descritpion 1`] = `
+<div>
+  <div
+    aria-modal="true"
+    class="g-modal"
+    id="headlessui-dialog-5"
+    role="dialog"
+  >
+    <div
+      class="g-modal__container"
+    >
+      <div
+        aria-hidden="true"
+        class="g-modal__overlay"
+        id="headlessui-dialog-overlay-6"
+      />
+      <button
+        class="g-modal__test"
+      />
+      <div
+        class="g-modal__content"
+      >
+        <h2
+          class="g-modal__title"
+          id="headlessui-dialog-title-7"
+        >
+          Terms of service
+        </h2>
+        <p
+          id="headlessui-description-8"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <!---->
+        <!---->
+      </div>
+      <button
+        aria-label="Close"
+        class="g-modal__close"
+        type="button"
+      >
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`GModal :  renders modal with Footer 1`] = `
+<div>
+  <div
+    aria-modal="true"
+    class="g-modal"
+    id="headlessui-dialog-9"
+    role="dialog"
+  >
+    <div
+      class="g-modal__container"
+    >
+      <div
+        aria-hidden="true"
+        class="g-modal__overlay"
+        id="headlessui-dialog-overlay-10"
+      />
+      <button
+        class="g-modal__test"
+      />
+      <div
+        class="g-modal__content"
+      >
+        <h2
+          class="g-modal__title"
+          id="headlessui-dialog-title-11"
+        >
+          Terms of service
+        </h2>
+        <p
+          id="headlessui-description-12"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <!---->
+        <div
+          class="g-modal__footer"
+        >
+          
+          
+          <button
+            as="button"
+            class="g-button"
+            fluid="false"
+            loading="false"
+          >
+            <!---->
+            <span
+              class="g-button__label"
+            >
+              
+              Secondary Action
+              
+            </span>
+          </button>
+          <button
+            as="button"
+            class="g-button g-button--primary"
+            fluid="false"
+            loading="false"
+            variant="primary"
+          >
+            <!---->
+            <span
+              class="g-button__label"
+            >
+              
+              Primary Action
+              
+            </span>
+          </button>
+          
+          
+        </div>
+      </div>
+      <button
+        aria-label="Close"
+        class="g-modal__close"
+        type="button"
+      >
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

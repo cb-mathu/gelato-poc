@@ -1,0 +1,528 @@
+.g-grid {
+  @include grid;
+}
+
+@mixin grid-template-columns($i) {
+  grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+}
+
+@mixin grid-column($i) {
+  grid-column: span #{$i} / span #{$i};
+}
+
+// Min: 0
+@for $i from 1 through 12 {
+  .g-grid-cols-#{$i} {
+    @include grid-template-columns($i);
+  }
+  .g-col-span-#{$i} {
+    @include grid-column($i);
+  }
+}
+
+$m_queries: sm, md, lg;
+@for $i from 1 through length($m_queries) {
+  $mq: nth($m_queries, $i);
+  @include g-mq($mq) {
+    @for $j from 1 through 12 {
+      .g-grid-cols-#{$mq}-#{$j} {
+        @include grid-template-columns($j);
+      }
+      .g-col-span-#{$mq}-#{$j} {
+        @include grid-column($j);
+      }
+    }
+  }
+  @if $i == 1 {
+    .g-col-auto {
+      grid-column: auto;
+    }
+  }
+}
+
+.g-gap-0 {
+  @include gap-0;
+}
+
+.g-gap-1 {
+  @include gap-1;
+}
+
+.g-gap-2 {
+  @include gap-2;
+}
+
+.g-gap-3 {
+  @include gap-3;
+}
+
+.g-gap-4 {
+  @include gap-4;
+}
+
+.g-gap-5 {
+  @include gap-5;
+}
+
+.g-gap-6 {
+  @include gap-6;
+}
+
+.g-gap-7 {
+  @include gap-7;
+}
+
+.g-gap-8 {
+  @include gap-8;
+}
+
+.g-gap-9 {
+  @include gap-9;
+}
+
+.g-gap-10 {
+  @include gap-10;
+}
+
+.g-gap-11 {
+  @include gap-11;
+}
+
+.g-gap-12 {
+  @include gap-12;
+}
+
+.g-gap-14 {
+  @include gap-14;
+}
+
+.g-gap-16 {
+  @include gap-16;
+}
+
+.g-gap-20 {
+  @include gap-20;
+}
+
+.g-gap-24 {
+  @include gap-24;
+}
+
+.g-gap-28 {
+  @include gap-28;
+}
+
+.g-gap-32 {
+  @include gap-32;
+}
+
+.g-gap-36 {
+  @include gap-36;
+}
+
+.g-gap-40 {
+  @include gap-40;
+}
+
+.g-gap-44 {
+  @include gap-44;
+}
+
+.g-gap-48 {
+  @include gap-48;
+}
+
+.g-gap-52 {
+  @include gap-52;
+}
+
+.g-gap-56 {
+  @include gap-56;
+}
+
+.g-gap-60 {
+  @include gap-60;
+}
+
+.g-gap-64 {
+  @include gap-64;
+}
+
+.g-gap-72 {
+  @include gap-72;
+}
+
+.g-gap-80 {
+  @include gap-80;
+}
+
+.g-gap-96 {
+  @include gap-96;
+}
+
+.g-gap-px {
+  @include gap-px;
+}
+
+.g-gap-x-0 {
+  @include gap-x-0;
+}
+
+.g-gap-x-1 {
+  @include gap-x-1;
+}
+
+.g-gap-x-2 {
+  @include gap-x-2;
+}
+
+.g-gap-x-3 {
+  @include gap-x-3;
+}
+
+.g-gap-x-4 {
+  @include gap-x-4;
+}
+
+.g-gap-x-5 {
+  @include gap-x-5;
+}
+
+.g-gap-x-6 {
+  @include gap-x-6;
+}
+
+.g-gap-x-7 {
+  @include gap-x-7;
+}
+
+.g-gap-x-8 {
+  @include gap-x-8;
+}
+
+.g-gap-x-9 {
+  @include gap-x-9;
+}
+
+.g-gap-x-10 {
+  @include gap-x-10;
+}
+
+.g-gap-x-11 {
+  @include gap-x-11;
+}
+
+.g-gap-x-12 {
+  @include gap-x-12;
+}
+
+.g-gap-x-14 {
+  @include gap-x-14;
+}
+
+.g-gap-x-16 {
+  @include gap-x-16;
+}
+
+.g-gap-x-20 {
+  @include gap-x-20;
+}
+
+.g-gap-x-24 {
+  @include gap-x-24;
+}
+
+.g-gap-x-28 {
+  @include gap-x-28;
+}
+
+.g-gap-x-32 {
+  @include gap-x-32;
+}
+
+.g-gap-x-36 {
+  @include gap-x-36;
+}
+
+.g-gap-x-40 {
+  @include gap-x-40;
+}
+
+.g-gap-x-44 {
+  @include gap-x-44;
+}
+
+.g-gap-x-48 {
+  @include gap-x-48;
+}
+
+.g-gap-x-52 {
+  @include gap-x-52;
+}
+
+.g-gap-x-56 {
+  @include gap-x-56;
+}
+
+.g-gap-x-60 {
+  @include gap-x-60;
+}
+
+.g-gap-x-64 {
+  @include gap-x-64;
+}
+
+.g-gap-x-72 {
+  @include gap-x-72;
+}
+
+.g-gap-x-80 {
+  @include gap-x-80;
+}
+
+.g-gap-x-96 {
+  @include gap-x-96;
+}
+
+.g-gap-x-px {
+  @include gap-x-px;
+}
+
+.g-gap-y-0 {
+  @include gap-y-0;
+}
+
+.g-gap-y-1 {
+  @include gap-y-1;
+}
+
+.g-gap-y-2 {
+  @include gap-y-2;
+}
+
+.g-gap-y-3 {
+  @include gap-y-3;
+}
+
+.g-gap-y-4 {
+  @include gap-y-4;
+}
+
+.g-gap-y-5 {
+  @include gap-y-5;
+}
+
+.g-gap-y-6 {
+  @include gap-y-6;
+}
+
+.g-gap-y-7 {
+  @include gap-y-7;
+}
+
+.g-gap-y-8 {
+  @include gap-y-8;
+}
+
+.g-gap-y-9 {
+  @include gap-y-9;
+}
+
+.g-gap-y-10 {
+  @include gap-y-10;
+}
+
+.g-gap-y-11 {
+  @include gap-y-11;
+}
+
+.g-gap-y-12 {
+  @include gap-y-12;
+}
+
+.g-gap-y-14 {
+  @include gap-y-14;
+}
+
+.g-gap-y-16 {
+  @include gap-y-16;
+}
+
+.g-gap-y-20 {
+  @include gap-y-20;
+}
+
+.g-gap-y-24 {
+  @include gap-y-24;
+}
+
+.g-gap-y-28 {
+  @include gap-y-28;
+}
+
+.g-gap-y-32 {
+  @include gap-y-32;
+}
+
+.g-gap-y-36 {
+  @include gap-y-36;
+}
+
+.g-gap-y-40 {
+  @include gap-y-40;
+}
+
+.g-gap-y-44 {
+  @include gap-y-44;
+}
+
+.g-gap-y-48 {
+  @include gap-y-48;
+}
+
+.g-gap-y-52 {
+  @include gap-y-52;
+}
+
+.g-gap-y-56 {
+  @include gap-y-56;
+}
+
+.g-gap-y-60 {
+  @include gap-y-60;
+}
+
+.g-gap-y-64 {
+  @include gap-y-64;
+}
+
+.g-gap-y-72 {
+  @include gap-y-72;
+}
+
+.g-gap-y-80 {
+  @include gap-y-80;
+}
+
+.g-gap-y-96 {
+  @include gap-y-96;
+}
+
+.g-gap-y-px {
+  @include gap-y-px;
+}
+.g-app {
+  @include bg-white;
+  margin: 0;
+  padding: 0;
+  @include h-screen;
+  @include overflow-hidden;
+}
+.g-container {
+  @include overflow-auto;
+  padding-bottom: 30px;
+  height: 100vh;
+}
+// Page layouts
+.g-page {
+  @include mx-auto;
+  @include p-8;
+  @include bg-white;
+  //height: 86vh;
+  max-width: $lg;
+  &__ {
+    &header {
+      @include mb-4;
+      @include flex;
+      @include items-center;
+      @include content-center;
+      z-index: 4;
+      @include relative;
+    }
+    &content {
+      @include grid;
+      @include gap-4;
+      @include gap-y-8;
+      @include items-start;
+      @include g-mq(sm) {
+        @include grid-cols-10;
+      }
+      @include g-mq(md) {
+        @include gap-x-6;
+      }
+      @include g-mq(lg) {
+        @include gap-x-8;
+      }
+      @include g-mq(xl) {
+        @include gap-x-12;
+      }
+    }
+    &main {
+      @include grid;
+      @include gap-4;
+      @include g-mq(sm) {
+        @include col-span-5;
+      }
+      @include g-mq(md) {
+        @include col-span-6;
+      }
+    }
+    &fluid {
+      @extend .g-page__main;
+      @include col-span-12;
+    }
+    &aside {
+      @include g-mq(sm) {
+        @include col-span-5;
+        @include sticky;
+        @include inset-0;
+        top: 2.5rem;
+      }
+      @include g-mq(md) {
+        @include col-span-4;
+      }
+    }
+  }
+}
+
+.g-header {
+  @include flex;
+  @include items-center;
+  @include flex-wrap;
+  //@include mb-4;
+  @include p-4;
+  @include flex-col;
+  @include mx-auto;
+  max-width: $lg;
+  @include bg-white;
+  height: 80px;
+  @include g-mq(sm) {
+    @include flex-row;
+  }
+  &__ {
+    &logo {
+      height: 100%;
+      > img {
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.g-loader {
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include h-screen;
+}
+.g-spinner {
+  @include absolute;
+  @include inset-0;
+  //@include mx-auto;
+  // max-width: $lg;
+  @include bg-white;
+  background-color: #f4f5f9;
+  // --tw-bg-opacity: 1;
+  //background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  opacity: 0.75;
+}

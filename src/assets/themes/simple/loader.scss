@@ -1,0 +1,16 @@
+.g-loader-icon {
+  @include -ml-1;
+  @include mr-3;
+  @include m-auto;
+  @include text-primary-600;
+  height: 1.5rem;
+  width: 1.5rem;
+  &- {
+    &circle {
+      opacity: 0.25;
+    }
+    &path {
+      opacity: 0.75;
+    }
+  }
+}

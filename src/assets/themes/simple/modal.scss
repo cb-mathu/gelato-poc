@@ -1,0 +1,102 @@
+.g-modal {
+  @include fixed;
+  @include inset-0;
+  @include overflow-y-auto;
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include max-h-screen;
+
+  &__ {
+    &title {
+      @include mb-2;
+    }
+
+    &test {
+      @include w-0;
+      @include h-0;
+      @include overflow-hidden;
+    }
+
+    &close {
+      @include absolute;
+      @include z-10;
+      @include rounded-full;
+      @include mt-2;
+      @include mr-2;
+      @include bg-white;
+      @include top-0;
+      @include right-0;
+      @include w-9;
+      @include h-9;
+
+      @include g-mq(sm) {
+        @include mt-14;
+        @include mr-14;
+      }
+
+      & svg {
+        @include w-5;
+        @include h-5;
+      }
+
+      &:hover {
+        @include bg-gray-50;
+      }
+    }
+
+    &container {
+      @include flex;
+      @include flex-col;
+      @include justify-center;
+      @include max-h-screen;
+      @include p-4;
+      @include text-center;
+      @include relative;
+      @include g-mq(md) {
+        min-width: 640px;
+      }
+
+      @include g-mq(sm) {
+        @include p-16;
+      }
+    }
+
+    &content-wrapper {
+      @include relative;
+      @include bg-white;
+      @include rounded-lg;
+      @include max-w-lg;
+    }
+
+    &overlay {
+      @include fixed;
+      @include inset-0;
+      @include opacity-75;
+      @include bg-gray-600;
+    }
+
+    &content {
+      @include relative;
+      @include bg-white;
+      @include rounded-lg;
+      @include max-w-lg;
+      @include align-bottom;
+      @include p-8;
+      @include text-left;
+      @include flex;
+      @include flex-col;
+      @include overflow-y-hidden;
+    }
+    &body {
+      @include flex-1;
+      @include overflow-y-auto;
+    }
+    &footer {
+      @include flex;
+      @include justify-end;
+      @include gap-4;
+      @include mt-6;
+    }
+  }
+}

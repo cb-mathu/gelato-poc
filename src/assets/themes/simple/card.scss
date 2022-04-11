@@ -1,0 +1,116 @@
+.g-card {
+  @include w-full;
+  @include p-4;
+  @include rounded-lg;
+  @include g-text-color-default;
+  @include g-text-base;
+  @include border;
+  @include border-gray-100;
+  @include shadow-sm;
+  @include bg-white;
+
+  @include g-mq(md) {
+    @include p-4;
+  }
+
+  @include g-mq(lg) {
+    @include p-6;
+  }
+
+  &- {
+    &recommended {
+      @include border-2;
+      @include border-dashed;
+    }
+  }
+
+  &__ {
+    &content {
+      @include grid;
+      @include grid-cols-1;
+      @include gap-2;
+
+      &-section {
+        @extend .g-card;
+        @include pb-12;
+      }
+      &_row {
+        @include flex;
+        @include items-center;
+      }
+    }
+    &left {
+      flex: 80;
+    }
+    &right {
+      @include justify-end;
+      @include self-end;
+      @include text-right;
+    }
+    &qty-margin {
+      @include relative;
+      @include mb-2;
+    }
+  }
+
+  /* GROUP OF CARDS */
+
+  &s {
+    &-group {
+      @include bg-secondary-100;
+      @include p-6;
+      @include rounded-lg;
+      &__ {
+        &title {
+          @include mb-4;
+          @include g-h-icon;
+          @include g-h-silent;
+        }
+        &icon {
+          @include h-5;
+          @include w-5;
+          @include text-secondary-600;
+          @include mr-2;
+        }
+        &wrapper {
+          @include flex;
+          @include flex-col;
+          @include flex-row;
+          @include space-x-6;
+          @include space-y-6;
+          @include space-y-0;
+
+          > {
+            @include w-full;
+          }
+        }
+      }
+      &-vertical {
+        @include grid;
+        @include gap-3;
+        &__ {
+          &item {
+          }
+        }
+      }
+    }
+  }
+
+  &-- {
+    &stroke {
+      @include border;
+      @include border-gray-200;
+      @include shadow-none;
+    }
+    &active {
+      @include border-primary-600;
+    }
+    &gray {
+      @include bg-gray-50;
+    }
+    &invalid {
+      @include border-red-400;
+      @include bg-red-50;
+    }
+  }
+}

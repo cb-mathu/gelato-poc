@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GSwitch :  renders off switch in disabled state 1`] = `
+<div>
+  <div
+    class="g-switch g-switch--disabled"
+  >
+    <button
+      aria-checked="false"
+      autocomplete="off"
+      class="g-switch__element"
+      disabled=""
+      id="headlessui-switch-15"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="false"
+      name=""
+      placeholder=""
+      required="false"
+      role="switch"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="sr-only"
+      >
+        Use setting
+      </span>
+      <span
+        aria-hidden="true"
+        class="g-switch__control"
+      />
+    </button>
+    <!---->
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GSwitch :  renders on switch in disabled state 1`] = `
+<div>
+  <div
+    class="g-switch g-switch--active g-switch--disabled"
+  >
+    <button
+      aria-checked="true"
+      autocomplete="off"
+      class="g-switch__element"
+      disabled=""
+      id="headlessui-switch-14"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="true"
+      name=""
+      placeholder=""
+      required="false"
+      role="switch"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="sr-only"
+      >
+        Use setting
+      </span>
+      <span
+        aria-hidden="true"
+        class="g-switch__control"
+      />
+    </button>
+    <!---->
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GSwitch :  renders switch by default 1`] = `
+<div>
+  <div
+    class="g-switch"
+  >
+    <button
+      aria-checked="false"
+      autocomplete="off"
+      class="g-switch__element"
+      id="headlessui-switch-1"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="false"
+      name=""
+      placeholder=""
+      required="false"
+      role="switch"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="sr-only"
+      >
+        Use setting
+      </span>
+      <span
+        aria-hidden="true"
+        class="g-switch__control"
+      />
+    </button>
+    <!---->
+  </div>
+  <!---->
+</div>
+`;

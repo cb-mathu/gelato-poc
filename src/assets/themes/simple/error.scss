@@ -1,0 +1,30 @@
+.g-error {
+  @include flex;
+  @include flex-col;
+  @include items-center;
+  @include justify-center;
+  background-color: transparent;
+  &__ {
+    &container {
+      @include max-w-lg;
+      @include p-8;
+      @include text-center;
+    }
+    &header {
+      @include font-bold;
+      @include antialiased;
+      @include text-base;
+      --tw-text-opacity: 1;
+      color: rgba(73, 78, 90, var(--tw-text-opacity));
+    }
+    &icon {
+      @include mb-4;
+      @include w-5;
+    }
+
+    &description {
+      @include g-text-secondary;
+      @include mt-2;
+    }
+  }
+}

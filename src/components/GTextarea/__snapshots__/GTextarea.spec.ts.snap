@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GTextarea:  renders description 1`] = `
+<div
+  class="g-input"
+>
+  <label
+    class="g-input__label"
+    id="label_5"
+  >
+    First Name
+  </label>
+  <div
+    class="g-input__desc"
+    id="description_6"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elitroin.Lorem ipsum dolor sit amet, consectetur adipiscing elitroin
+  </div>
+  <div
+    class="g-input__group"
+  >
+    <textarea
+      aria-describedby="description_6"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_5"
+      autocomplete="off"
+      class="g-input__element"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elitroin.Lorem ipsum dolor sit amet, consectetur adipiscing elitroin"
+      id="CoreTextarea_8"
+      invalid="false"
+      label="First Name"
+      modelmodifiers="[object Object]"
+      modelvalue="Hello from chargebee"
+      name=""
+      noresize="false"
+      placeholder=""
+    />
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GTextarea:  renders slots 1`] = `
+<div
+  class="g-input"
+>
+  <label
+    class="g-input__label"
+    id="label_9"
+  >
+    
+    First Name
+    
+  </label>
+  <div
+    class="g-input__desc"
+    id="description_10"
+  >
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elitroin.Lorem ipsum dolor sit amet, consectetur adipiscing elitroin
+    
+  </div>
+  <div
+    class="g-input__group"
+  >
+    <textarea
+      aria-describedby="description_10"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_9"
+      autocomplete="off"
+      class="g-input__element"
+      id="CoreTextarea_12"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="Hello from chargebee"
+      name=""
+      noresize="false"
+      placeholder=""
+    />
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`GTextarea:  renders with default args 1`] = `
+<div
+  class="g-input"
+>
+  <!---->
+  <!---->
+  <div
+    class="g-input__group"
+  >
+    <textarea
+      aria-describedby="description_2"
+      aria-errormessage=""
+      aria-invalid="false"
+      aria-labelledby="label_1"
+      autocomplete="off"
+      class="g-input__element"
+      id="CoreTextarea_4"
+      invalid="false"
+      modelmodifiers="[object Object]"
+      modelvalue="Hello from chargebee"
+      name=""
+      noresize="false"
+      placeholder=""
+    />
+  </div>
+  <!---->
+</div>
+`;
