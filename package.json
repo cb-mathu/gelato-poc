@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "vite build --mode development --watch",
     "dev:storybook": "start-storybook -p 6007",
+    "lint": "eslint --ext .js,.ts,.vue src",
     "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
     "build:dev": "vue-tsc && vite build --mode development",
     "build:storybook": "build-storybook -o storybook-dist",

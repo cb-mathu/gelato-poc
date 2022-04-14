@@ -1,0 +1,3 @@
+tests/*
+*.json
+.eslintrc.js
