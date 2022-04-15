@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['@chargebee/eslint-config']
+    extends: ['@chargebee/eslint-config'],
 }
