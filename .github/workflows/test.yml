@@ -1,0 +1,83 @@
+name: test
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'src/**'
+      - 'packages/**'
+      - '.eslint*'
+      - 'jest*'
+      - 'sonar-project.properties'
+      - 'package*.json'
+      - 'tsconfig.json'
+  workflow_call:
+    secrets:
+      SONAR_TOKEN:
+        required: true
+      NPM_TOKEN:
+        required: true
+jobs:
+  test:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            fetch-depth: 0
+      - run: git fetch --no-tags --depth=1 origin master
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Restore node_modules
+        id: npm-cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-${{ hashFiles('./package-lock.json') }}
+      - name: Install Dependencies
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm ci
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Cache Jest cache
+        id: cache-jest-cache
+        uses: actions/cache@v1
+        with:
+          path: .jest-cache
+          key: ${{ runner.os }}-${{ matrix.node-version }}-jest
+      - name: Run all tests
+        if: github.event_name == 'push'
+        run: npm run test
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Run tests only for the changed files
+        if: github.event_name == 'pull_request'
+        run: npm run test:ci --changedSince=origin/master
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: lcov-code-coverage-report
+          path: ./coverage/lcov.info
+  sonarcloud-scan:
+      needs: test
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+          with:
+              fetch-depth: 0
+        - name: Retrieve code coverage results
+          uses: actions/download-artifact@v2
+          with:
+            name: lcov-code-coverage-report
+            path: ./coverage
+        - name: SonarCloud Scan chargebee-ui
+          uses: SonarSource/sonarcloud-github-action@master
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
